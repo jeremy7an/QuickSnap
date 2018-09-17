@@ -29,8 +29,8 @@ namespace CardGames
 			if (myGame.IsStarted) {
 				if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT) &&
 				   SwinGame.KeyTyped (KeyCode.vk_RSHIFT)) {
-					SwinGame.LoadSoundEffectNamed ("Opening","bubble_opening.mp3");
-					SwinGame.PlaySoundEffect ("Slap1");
+					SwinGame.LoadSoundEffectNamed ("Opening","bubble.wav");
+					SwinGame.PlaySoundEffect ("Opening");
 					//TODO: add sound effects
 				} else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT)) {
 					myGame.PlayerHit (0);
