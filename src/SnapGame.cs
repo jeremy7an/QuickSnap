@@ -26,12 +26,14 @@ namespace CardGames
 			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
 			{
 				myGame.Start ();
+
+
 			}
 			if (myGame.IsStarted) {
 				if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT) &&
 				   SwinGame.KeyTyped (KeyCode.vk_RSHIFT)) {
-					SwinGame.LoadSoundEffectNamed ("Opening","bubble.wav");
-					SwinGame.PlaySoundEffect ("Opening");
+					SwinGame.LoadSoundEffectNamed ("Start","bubble.wav");
+				SwinGame.PlaySoundEffect ("Start");
 					//TODO: add sound effects
 				} else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT)) {
 					myGame.PlayerHit (0);
@@ -83,6 +85,7 @@ namespace CardGames
         {
             //Open the game window
             SwinGame.OpenGraphicsWindow("Snap!", 860, 500);
+
 
 			//Load the card images and set their cell details
             LoadResources();
