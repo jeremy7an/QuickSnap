@@ -157,6 +157,8 @@ namespace CardGames.GameLogic
 			_started = false;
 			_gameTimer.Stop ();
 		}
+
+
 	
 		#region Snap Game Unit Tests
 		#if DEBUG
