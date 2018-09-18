@@ -144,13 +144,17 @@ namespace CardGames.GameLogic
 				 _topCards [0] != null && _topCards [0].Rank == _topCards [1].Rank) // and its a match
 			{
 				_score [player]++;
-				SwinGame.LoadSoundEffectNamed ("Slap", "slap.wav");
-				SwinGame.PlaySoundEffect ("Slap");
+
+			SwinGame.LoadSoundEffectNamed ("Slap1","slap.wav");
+				SwinGame.PlaySoundEffect ("Slap1");
 				//TODO: consider playing a sound here...
 			}
 			else if ( player >= 0 && player < _score.Length)
 			{
 				_score [player]--;
+					SwinGame.LoadSoundEffectNamed ("Slap1","slap.wav");
+				SwinGame.PlaySoundEffect ("Slap1");
+
 			}
 
 			// stop the game...
